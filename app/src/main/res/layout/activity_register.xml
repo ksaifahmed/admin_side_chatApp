@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/login_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/orrodho_logo" />
+
+            <EditText
+                android:id="@+id/new_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_image"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_email"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_password"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/weak_pass_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_password"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:layout_marginTop="10dp"
+                android:text="password must be of 8 characters and must\ncontain a number,at least one small and one Caps and one symbol"
+                android:textAlignment="center"
+                android:textColor="#00E5FF"
+                android:textSize="12sp"
+
+                />
+
+            <Button
+                android:id="@+id/createAc_button"
+                android:layout_width="200dp"
+                android:layout_height="51dp"
+                android:layout_below="@+id/weak_pass_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button"
+                android:padding="4dp"
+                android:text="Create Account"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/existing_ac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/createAc_button"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:text="Do you have an existing account?"
+                android:textAlignment="center"
+                android:textColor="#856A6A"
+                android:textSize="18sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/login_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/existing_ac"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="3dp"
+                android:text="Login Here!"
+                android:textAlignment="center"
+                android:textColor="#00E676"
+                android:textSize="19sp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_link"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+
+
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".LoginActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/login_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/orrodho_logo" />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_image"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_email"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+
+                />
+
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/login_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/rounded_button"
+                android:padding="1dp"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_button"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:text="Forgot Password?"
+                android:textAlignment="center"
+                android:textColor="#048ECA"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forgot_password"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:text="Sign up here!"
+                android:textAlignment="center"
+                android:textColor="#0AC265"
+                android:textSize="18sp"
+
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+
+
+</RelativeLayout>

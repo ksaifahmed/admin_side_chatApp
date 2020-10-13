@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_toolbar_background"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/orrodho_logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oroddho"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBarx"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateDrawable="@drawable/circle_progressbar"
+        android:indeterminate="true"
+        />
+
+    <Button
+        android:id="@+id/gotoChatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/main_page_toolbar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circularbutton"
+        android:text="Start\nTalking"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="@drawable/main_back"
+        android:layout_alignParentBottom="true"
+        >
+    </View>
+
+    <TextView
+        android:id="@+id/nicher_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textSize="20sp"
+        android:paddingEnd="20dp"
+        android:textAlignment="center"
+        android:paddingStart="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_img"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/orrodho_logo" />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/receiver_message_linlay"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/message_img"
+        android:background="@drawable/receiver_message_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/receiver_message"
+            android:layout_height="wrap_content"
+            android:maxWidth="190dp"
+            android:textColor="#302D2D"
+            android:background="@drawable/receiver_message_layout"
+            android:text="receiver message"
+            android:paddingBottom="0dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:id="@+id/receiver_message_time"
+            android:text="May 21st, 2:23pm"
+            android:textSize="10sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/sender_message_layout"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/sender_message_linlay"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sender_message"
+            android:maxWidth="190dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/sender_message_layout"
+            android:text="sender message"
+            android:paddingBottom="0dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:id="@+id/sender_message_time"
+            android:text="May 21st, 2:23pm"
+            android:textSize="10sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
